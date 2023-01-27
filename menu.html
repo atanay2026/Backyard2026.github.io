@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport">
+        <title>Backyard Grill</title>
+        <style>
+            h1{
+                font-family: impact, sans-serif, serif;
+            }
+            header{
+                height: 105px;
+                font-family: impact, sans-serif, serif;
+                font-size: 25px;
+                padding-top:35px;
+                border-bottom-style: solid;
+                text-align: center;
+            }
+            body{
+                font-family: sans-serif, serif;
+                width: auto;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                background-color: whitesmoke;
+                color: black;
+            }
+            nav{
+                font-family: impact, sans-serif, serif;
+                width: 100%;
+                background-color:#F27405;
+                border-bottom-style: solid;
+                position: fixed;
+            }
+            nav ul {
+                width: auto;
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:0px;
+                margin-bottom:0px;
+                
+            }
+            nav ul li {
+                float: right;
+                height: auto;
+            }
+            nav ul li:first-of-type {
+                float: left;
+            }
+            nav ul li a {
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: inherit;
+                font-size: 22pt;
+            }
+            nav ul li:hover {
+                background-color: #D93D04;
+            }
+            .nocolorchange:hover {
+                background-color:#F27405;
+            }
+            video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .dark-mode {
+                background-color: #0D0D0D;
+                color: #F2B950;
+            }
+            .dark-mode nav{
+                background: #D93D04;
+            }
+            .dark-mode ul li:hover {
+                background-color: #F27405;
+            }
+            .dark-mode .nocolorchange {
+                background-color:#D93D04;
+            }
+            article{
+                text-align: center;
+                margin: 20px;
+                border-bottom-style: dotted;
+            }
+            section{
+                background-color: #F2B950;
+                font-size: 20px;
+                height: 500px;
+                width: 300px;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                border-style: solid;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .dark-mode section{
+                background-color: #0D0D0D;
+            }
+            .left{
+                float:left;
+            }
+            .right{
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nocolorchange"><b>BACKYARD GRILL</b></a></li>
+                <li><a onclick="myFunction()">Dark Mode</a>
+                    <script>
+                    function myFunction() {
+                       var element = document.body;
+                       element.classList.toggle("dark-mode");
+                    }
+                    </script>
+                </li>
+                <li><a class="nocolorchange">|</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Menu</h1>
+        </header>
+        <article class="left">
+            <h1>FOODS</h1>
+            <section class="left">
+                <image src="steak.png" height="300px" width="300px">235.00 PHP</image>
+                <h1>VEGAN STEAK</h1>
+                <p>Grilled Sti- Steak.</p>
+                <p>100% vegan.</p>
+            </section>
+            <section class="left">
+                <image src="drumstick.png" height="300px" width="300px">260.00 PHP</image>
+                <h1>DRUMSTICK</h1>
+                <p>Grilled drumstick</p>
+                <p>100% vegan.</p>
+            </section>
+            <section class="left">
+                <image src="bob.png" height="300px" width="300px">300.00 PHP</image>
+                <h1>BOB</h1>
+                <p>Tastes like pork.</p>
+                <p>May or may not be grilled human meat.</p>
+            </section>
+        </article>
+        <article class="right">
+            <h1>DRINKS</h1>
+            <section class="right">
+                <image src="air.jpg" height="300px" width="300px">95.00 PHP</image>
+                <h1>CUP OF AIR</h1>
+                <p>Literally Air.</p>
+                <p>How do you even drink this?</p>
+            </section>
+            <section class="right">
+                <image src="twobig.png" height="300px" width="300px">50.00 PHP</image>
+                <h1>TWO BEEG</h1>
+                <p>A cup of water with 2 bees in it.</p>
+                <p>Try not to get stung :).</p>
+            </section>
+            <section class="right">
+                <image src="sodalicious.png" height="300px" width="300px">75.00 PHP</image>
+                <h1>SODALICIOUS</h1>
+                <p>A random mix of soda that we chose.</p>
+                <p>You will never know what's in it.</p>
+            </section>
+        </article>
+    </body>
+</html>

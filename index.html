@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Backyard Grill</title>
+        <style>
+            h1{
+                font-family: impact, sans-serif, serif;
+            }
+            body{
+                font-family: sans-serif, serif;
+                width: auto;
+                margin-top: 0px;
+                margin-left: 0px;
+                left: 0;
+                right: 0;
+                margin-right: 0px;
+                background-color: whitesmoke;
+                color: black;
+            }
+            nav{
+                font-family: impact, sans-serif, serif;
+                width: 100%;
+                background-color:#F27405;
+                border-bottom-style: solid;
+                position: fixed;
+            }
+            nav ul {
+                width: auto;
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:0px;
+                margin-bottom:0px;
+                
+            }
+            nav ul li {
+                float: right;
+                height: auto;
+            }
+            nav ul li:first-of-type {
+                float: left;
+            }
+            nav ul li a {
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: inherit;
+                font-size: 22pt;
+            }
+            nav ul li:hover {
+                background-color: #D93D04;
+            }
+            .nocolorchange:hover {
+                background-color:#F27405;
+            }
+            video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .dark-mode {
+                background-color: #0D0D0D;
+                color: #F2B950;
+            }
+            .dark-mode nav{
+                background: #D93D04;
+            }
+            .dark-mode ul li:hover {
+                background-color: #F27405;
+            }
+            .dark-mode .nocolorchange {
+                background-color:#D93D04;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nocolorchange"><b>BACKYARD GRILL</b></a></li>
+                <li><a onclick="myFunction()">Dark Mode</a>
+                    <script>
+                    function myFunction() {
+                       var element = document.body;
+                       element.classList.toggle("dark-mode");
+                    }
+                    </script>
+                </li>
+                <li><a class="nocolorchange">|</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+        <video autoplay muted loop>
+            <source type="video/mpeg" src="grill.mp4">
+            <source type="video/ogg" src="grill.ogg">
+        </video>
+    </body>
+</html>
